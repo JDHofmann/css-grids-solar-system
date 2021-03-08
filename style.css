@@ -2,15 +2,18 @@ body {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
+    display: grid;
+    place-items: center;
+    height: 100vh;
 }
 
 main {
     width: 90vw;
     height: 90vw;
-    margin: 5vh 5vw;
+    /* margin: 5vh 5vw; */
     display: grid;
-    grid-template-columns: repeat(16, 1fr);
-    grid-template-rows: repeat(16, 1fr);
+    grid-template-columns: repeat(2, 1fr) 2fr 2fr repeat(8, 1fr) 2fr 2fr repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr) 2fr 2fr repeat(8, 1fr) 2fr 2fr repeat(2, 1fr);
 }
 .planet {
     height: 5vmin;
@@ -23,7 +26,7 @@ main {
 }
 .orbit {
     border-radius: 50%;
-    border: 2px solid #000000;
+    border: 2px dotted #000000;
 }
 .neptune {
     grid-row: 1/2;
@@ -36,6 +39,12 @@ main {
 .uranus {
     grid-row: 2/3;
     grid-column: 1/17;
+    /* bottom of system */
+    /* grid-row: 15/16;
+    grid-column: 1/17;
+    margin-top: 0;
+    margin-bottom: -2.5vmin;
+    align-self: end; */
 }
 .uranus-orbit {
     grid-row: 2/16;
@@ -99,3 +108,4 @@ main {
     justify-self: center;
     align-self: center;
 }
+/* increase involvment from volunteers, a tangible representation of their contribuition */
