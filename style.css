@@ -18,11 +18,11 @@ main {
 .planet {
     height: 5vmin;
     width: 5vmin;
+    margin-top: -2.5vmin;
     border-radius: 50%;
     border: 2px solid #000000;
     background: #ffffff;
     justify-self: center;
-    margin-top: -2.5vmin;
 }
 .orbit {
     border-radius: 50%;
@@ -61,6 +61,9 @@ main {
 .jupiter {
     grid-row: 4/5;
     grid-column: 1/17;
+    height: 7vmin;
+    width: 7vmin;
+    margin-top: -3.5vmin;
 }
 .jupiter-orbit {
     grid-row: 4/14;
