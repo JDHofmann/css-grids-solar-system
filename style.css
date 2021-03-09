@@ -10,15 +10,14 @@ body {
 main {
     width: 90vw;
     height: 90vw;
-    /* margin: 5vh 5vw; */
     display: grid;
-    grid-template-columns: repeat(2, 1fr) 2fr 2fr repeat(8, 1fr) 2fr 2fr repeat(2, 1fr);
-    grid-template-rows: repeat(2, 1fr) 2fr 2fr repeat(8, 1fr) 2fr 2fr repeat(2, 1fr);
+    grid-template-columns: 3fr 2.5fr 2fr 1.5fr 1fr 1fr .75fr 3fr 3fr .75fr 1fr 1fr 1.5fr 2fr 2.5fr 3fr;
+    grid-template-rows: 3fr 2.5fr 2fr 1.5fr 1fr 1fr .75fr 3fr 3fr .75fr 1fr 1fr 1.5fr 2fr 2.5fr 3fr;
 }
 .planet {
-    height: 5vmin;
-    width: 5vmin;
-    margin-top: -2.5vmin;
+    height: 2.5vmin;
+    width: 2.5vmin;
+    margin-top: -1.25vmin;
     border-radius: 50%;
     border: 2px solid #000000;
     background: #ffffff;
@@ -31,6 +30,9 @@ main {
 .neptune {
     grid-row: 1/2;
     grid-column: 1/17;
+    height: 3vmin;
+    width: 3vmin;
+    margin-top: -1.5vmin;
 }
 .neptune-orbit {
     grid-row: 1/17;
@@ -45,6 +47,9 @@ main {
     margin-top: 0;
     margin-bottom: -2.5vmin;
     align-self: end; */
+    height: 3.5vmin;
+    width: 3.5vmin;
+    margin-top: -1.75vmin;
 }
 .uranus-orbit {
     grid-row: 2/16;
@@ -53,6 +58,9 @@ main {
 .saturn {
     grid-row: 3/4;
     grid-column: 1/17;
+    height: 4vmin;
+    width: 4vmin;
+    margin-top: -2vmin;
 }
 .saturn-orbit {
     grid-row: 3/15;
@@ -61,9 +69,9 @@ main {
 .jupiter {
     grid-row: 4/5;
     grid-column: 1/17;
-    height: 7vmin;
+    /* height: 7vmin;
     width: 7vmin;
-    margin-top: -3.5vmin;
+    margin-top: -3.5vmin; */
 }
 .jupiter-orbit {
     grid-row: 4/14;
