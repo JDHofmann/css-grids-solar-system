@@ -15,9 +15,9 @@ main {
     grid-template-rows: 3fr 2.5fr 2fr 1.5fr 1fr 1fr .75fr 3fr 3fr .75fr 1fr 1fr 1.5fr 2fr 2.5fr 3fr;
 }
 .planet {
-    height: 2.5vmin;
-    width: 2.5vmin;
-    margin-top: -1.25vmin;
+    height: 2vmin;
+    width: 2vmin;
+    margin-top: -1vmin;
     border-radius: 50%;
     border: 2px solid #000000;
     background: #ffffff;
@@ -69,9 +69,9 @@ main {
 .jupiter {
     grid-row: 4/5;
     grid-column: 1/17;
-    /* height: 7vmin;
-    width: 7vmin;
-    margin-top: -3.5vmin; */
+    height: 5vmin;
+    width: 5vmin;
+    margin-top: -2.5vmin;
 }
 .jupiter-orbit {
     grid-row: 4/14;
@@ -80,6 +80,9 @@ main {
 .mars {
     grid-row: 5/6;
     grid-column: 1/17;
+    height: 2vmin;
+    width: 2vmin;
+    margin-top: -1vmin;
 }
 .mars-orbit {
     grid-row: 5/13;
@@ -104,6 +107,9 @@ main {
 .mercury {
     grid-row: 8/9;
     grid-column: 1/17;
+    height: 1vmin;
+    width: 1vmin;
+    margin-top: -.5vmin;
 }
 .mercury-orbit {
     grid-row: 8/10;
@@ -112,8 +118,8 @@ main {
 .sun {
     grid-row: 8/10;
     grid-column: 8/10;
-    height: 5vmin;
-    width: 5vmin;
+    height: 10vmin;
+    width: 10vmin;
     border-radius: 50%;
     background: #000000;
     justify-self: center;
