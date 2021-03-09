@@ -19,9 +19,9 @@ main {
     grid-template-rows: 3fr 2.5fr 2.5fr 2fr 1fr 1fr .75fr 3fr 3fr .75fr 1fr 1fr 2fr 2.5fr 2.5fr 3fr;
 }
 .planet {
-    height: 1.5vmin;
-    width: 1.5vmin;
-    margin-top: -.75vmin;
+    height: min(1.5vmin, 10px);
+    width: min(1.5vmin, 10px);
+    margin-top: max(-.75vmin, -5px);
     border-radius: 50%;
     background: #ffffff;
     justify-self: center;
@@ -33,9 +33,9 @@ main {
 .neptune {
     grid-row: 1/2;
     grid-column: 1/17;
-    height: 3vmin;
-    width: 3vmin;
-    margin-top: -1.5vmin;
+    height: min(3vmin, 20px);
+    width: min(3vmin, 20px);
+    margin-top: max(-1.5vmin, -10px);
 }
 .neptune-orbit {
     grid-row: 1/17;
@@ -44,15 +44,9 @@ main {
 .uranus {
     grid-row: 2/3;
     grid-column: 1/17;
-    /* bottom of system */
-    /* grid-row: 15/16;
-    grid-column: 1/17;
-    margin-top: 0;
-    margin-bottom: -2.5vmin;
-    align-self: end; */
-    height: 3.5vmin;
-    width: 3.5vmin;
-    margin-top: -1.75vmin;
+    height: min(3vmin, 23.5px);
+    width: min(3vmin, 23.5px);
+    margin-top: max(-1.75vmin, -11.75px);
 }
 .uranus-orbit {
     grid-row: 2/16;
@@ -61,9 +55,9 @@ main {
 .saturn {
     grid-row: 3/4;
     grid-column: 1/17;
-    height: 5vmin;
-    width: 5vmin;
-    margin-top: -2.5vmin;
+    height: min(5vmin, 33.5px);
+    width: min(5vmin, 33.5px);
+    margin-top: max(-2.5vmin, -16.75px);
 }
 .saturn-orbit {
     grid-row: 3/15;
@@ -72,9 +66,9 @@ main {
 .jupiter {
     grid-row: 4/5;
     grid-column: 1/17;
-    height: 6vmin;
-    width: 6vmin;
-    margin-top: -3vmin;
+    height: min(6vmin, 40px);
+    width: min(6vmin, 40px);
+    margin-top: max(-3vmin, -20px);
 }
 .jupiter-orbit {
     grid-row: 4/14;
@@ -83,9 +77,9 @@ main {
 .mars {
     grid-row: 5/6;
     grid-column: 1/17;
-    height: 2vmin;
-    width: 2vmin;
-    margin-top: -1vmin;
+    height: min(2vmin, 13.5px);
+    width: min(2vmin, 13.5px);
+    margin-top: max(-1vmin, -6.75px);
 }
 .mars-orbit {
     grid-row: 5/13;
@@ -118,8 +112,8 @@ main {
 .sun {
     grid-row: 8/10;
     grid-column: 8/10;
-    height: 10vmin;
-    width: 10vmin;
+    height: min(10vmin, 66.6px);
+    width: min(10vmin, 66.6px);
     border-radius: 50%;
     background: #ffffff;
     justify-self: center;
